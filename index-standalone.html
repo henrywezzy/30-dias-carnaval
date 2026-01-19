@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 30 Dias para o Carnaval</title>
+    <link rel="stylesheet" href="style-standalone.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Download Banner -->
+        <div class="download-banner">
+            <div class="container">
+                <a href="/dist.zip" download class="download-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="7 13 12 18 17 13"></polyline>
+                        <line x1="12" y1="18" x2="12" y2="2"></line>
+                    </svg>
+                    BAIXAR ARQUIVOS DO SITE (dist.zip)
+                </a>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge pulse">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/>
+                        </svg>
+                        <span>Carnaval 2026 está chegando!</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Emagreça <span class="text-coral">até 10kg</span> em 30 dias<br>
+                        e chegue <span class="text-green">linda e confiante</span><br>
+                        no Carnaval! 💃
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Conquiste o corpo dos seus sonhos comendo bem, sem passar fome,<br>
+                        com receitas práticas, deliciosas e que realmente funcionam!
+                    </p>
+
+                    <button onclick="redirectToCheckout()" class="cta-btn pulse">
+                        Quero Começar Agora
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+
+                    <p class="hero-info">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 010 7.75"/>
+                        </svg>
+                        +5000 pessoas já transformaram sua aparência
+                    </p>
+
+                    <p class="hero-countdown">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        Faltam apenas <span id="days-countdown">365</span> dias para o Carnaval!
+                    </p>
+
+                    <div class="trust-badges">
+                        <div class="badge-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                            <span>Compra 100% Segura</span>
+                        </div>
+                        <div class="badge-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                <path d="M7 11V7a5 5 0 0110 0v4"/>
+                            </svg>
+                            <span>Dados Protegidos</span>
+                        </div>
+                        <div class="badge-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="8" r="7"/>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                            </svg>
+                            <span>Garantia de 7 Dias</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pain Section -->
+        <section class="pain-section">
+            <div class="container">
+                <h2 class="section-title">
+                    Você já tentou de <span class="text-coral">tudo</span>, mas...
+                </h2>
+
+                <div class="pain-grid">
+                    <div class="pain-card">
+                        <div class="icon-circle bg-coral">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </div>
+                        <h3>As dietas são muito restritivas</h3>
+                        <p>Você passa fome, fica irritada, perde a energia e depois desiste. E quando volta a comer, engorda tudo de novo.</p>
+                    </div>
+
+                    <div class="pain-card">
+                        <div class="icon-circle bg-coral">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </div>
+                        <h3>Você não tem tempo para cozinhar</h3>
+                        <p>Sua rotina é corrida, você trabalha, cuida da casa, da família... e acaba comendo qualquer coisa rápida e nada saudável.</p>
+                    </div>
+
+                    <div class="pain-card">
+                        <div class="icon-circle bg-coral">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </div>
+                        <h3>O Carnaval está se aproximando</h3>
+                        <p>E você olha no espelho e sente aquele aperto no coração. Não quer mais se esconder, usar roupas largas ou deixar de aproveitar.</p>
+                    </div>
+
+                    <div class="pain-card">
+                        <div class="icon-circle bg-coral">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </div>
+                        <h3>Sua autoestima está lá embaixo</h3>
+                        <p>Você evita tirar fotos, não se sente bonita, e isso afeta sua confiança, seus relacionamentos e sua felicidade.</p>
+                    </div>
+                </div>
+
+                <div class="warning-box">
+                    <p>
+                        Se você não fizer nada agora...<br>
+                        <span class="text-coral">vai chegar no Carnaval exatamente do mesmo jeito.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="solution-section">
+            <div class="container">
+                <div class="solution-header">
+                    <div class="solution-badge">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <span>A Solução que Funciona</span>
+                    </div>
+
+                    <h2 class="section-title">
+                        Apresentamos o<br>
+                        <span class="text-green">Desafio 30 Dias para o Carnaval</span>
+                    </h2>
+
+                    <p class="section-subtitle">
+                        O método completo, simples e prático para você emagrecer comendo bem, sem passar fome, e chegar radiante no Carnaval!
+                    </p>
+                </div>
+
+                <div class="benefits-card">
+                    <h3>Por que este desafio é diferente de tudo?</h3>
+
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <div class="icon-circle bg-green">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                                </svg>
+                            </div>
+                            <h4>Sem Sofrimento</h4>
+                            <p>Você vai comer comidas gostosas, coloridas e que saciam de verdade</p>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="icon-circle bg-coral">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                            </div>
+                            <h4>Praticidade Total</h4>
+                            <p>Receitas rápidas e fáceis que cabem na sua rotina corrida</p>
+                        </div>
+
+                        <div class="benefit-item">
+                            <div class="icon-circle bg-yellow">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/>
+                                </svg>
+                            </div>
+                            <h4>Resultados Reais</h4>
+                            <p>Método testado e comprovado para emagrecimento saudável</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offer Section -->
+        <section class="offer-section">
+            <div class="container">
+                <h2 class="section-title">O que você vai receber:</h2>
+                <p class="section-subtitle">Tudo que você precisa para transformar seu corpo em 30 dias</p>
+
+                <div class="offer-items">
+                    <div class="offer-card card-green">
+                        <div class="offer-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                        </div>
+                        <div class="offer-content">
+                            <h3>📅 Desafio Completo de 30 Dias</h3>
+                            <p>Planejamento dia a dia com orientações claras sobre o que comer, quando comer e como montar suas refeições para emagrecer com saúde.</p>
+                            <ul>
+                                <li>✓ Cronograma organizado semana a semana</li>
+                                <li>✓ Dicas de motivação e acompanhamento diário</li>
+                                <li>✓ Estratégias para manter o foco até o fim</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="offer-card card-coral">
+                        <div class="offer-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 22s1.5-3 4-3 4 1 6 1 4-1 6-1 4 3 4 3"/>
+                                <path d="M6 12v8"/>
+                                <path d="M12 12v8"/>
+                                <path d="M18 12v8"/>
+                                <path d="M12 4v4"/>
+                                <path d="M16 2l-2 2"/>
+                                <path d="M8 2l2 2"/>
+                            </svg>
+                        </div>
+                        <div class="offer-content">
+                            <h3>🥗 120 Receitas de Saladas Saudáveis e Deliciosas</h3>
+                            <p>Receitas variadas, coloridas, nutritivas e SABOROSAS! Você nunca mais vai enjoar de salada.</p>
+                            <ul>
+                                <li>✓ Receitas para almoço e jantar</li>
+                                <li>✓ Opções com proteínas, grãos e vegetais variados</li>
+                                <li>✓ Ingredientes fáceis de encontrar e preparar</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="offer-card card-yellow">
+                        <div class="offer-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 13.87A4 4 0 017.41 6a5.11 5.11 0 011.05-1.54 5 5 0 017.08 0A5.11 5.11 0 0116.59 6 4 4 0 0118 13.87V21H6z"/>
+                                <line x1="6" y1="17" x2="18" y2="17"/>
+                            </svg>
+                        </div>
+                        <div class="offer-content">
+                            <h3>🍯 30 Molhos Saudáveis e Irresistíveis</h3>
+                            <p>Transforme qualquer salada em uma refeição especial! Molhos caseiros, saudáveis e que deixam tudo mais gostoso.</p>
+                            <ul>
+                                <li>✓ Receitas rápidas e práticas</li>
+                                <li>✓ Zero culpa, muito sabor</li>
+                                <li>✓ Variedade para nunca enjoar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-card">
+                    <div class="price-badge">🔥 SÓ HOJE!</div>
+                    <p class="old-price">De <span>R$ 197</span> por apenas</p>
+                    <p class="new-price">R$ 15,90</p>
+                    <p class="price-info">Investimento único • Acesso imediato • Transformação garantida</p>
+                    <button onclick="redirectToCheckout()" class="cta-btn-white pulse">
+                        Garantir Minha Vaga Agora
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                    <p class="timer-text">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        Essa promoção de R$ 15,90 expira hoje à meia-noite!
+                    </p>
+                </div>
+
+                <div class="guarantee-card">
+                    <div class="guarantee-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"/>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>🛡️ Garantia de Satisfação de 7 Dias</h3>
+                        <p>Se você não gostar do conteúdo ou não se sentir satisfeita por qualquer motivo, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia. Você não tem nada a perder e tudo a ganhar!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transformation Section -->
+        <section class="transformation-section">
+            <div class="container">
+                <h2 class="section-title">
+                    Como você vai se sentir<br>
+                    <span class="text-coral">daqui a 30 dias?</span>
+                </h2>
+                <p class="section-subtitle">Sua transformação vai muito além do corpo</p>
+
+                <div class="transformation-grid">
+                    <div class="transformation-card">
+                        <div class="icon-circle bg-coral">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3>Confiança Renovada</h3>
+                        <p>Você vai olhar no espelho e sorrir. Vai querer tirar fotos, usar aquela roupa que estava guardada, e se sentir linda de verdade.</p>
+                    </div>
+
+                    <div class="transformation-card">
+                        <div class="icon-circle bg-green">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3>Corpo Leve e Saudável</h3>
+                        <p>Menos inchaço, mais disposição, roupas mais folgadas e aquela sensação incrível de estar cuidando de você mesma.</p>
+                    </div>
+
+                    <div class="transformation-card">
+                        <div class="icon-circle bg-yellow">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                            </svg>
+                        </div>
+                        <h3>Autoestima nas Alturas</h3>
+                        <p>Você vai se amar mais, se respeitar mais, e isso vai refletir em todas as áreas da sua vida: relacionamentos, trabalho, felicidade.</p>
+                    </div>
+
+                    <div class="transformation-card">
+                        <div class="icon-circle bg-coral">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/>
+                            </svg>
+                        </div>
+                        <h3>Energia e Vitalidade</h3>
+                        <p>Acordar com disposição, ter energia para aproveitar o dia, brincar no Carnaval sem cansaço. Você vai se sentir viva!</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <p>
+                        No Carnaval, enquanto outras mulheres vão estar se escondendo...<br>
+                        <span class="text-green">você vai estar radiante, confiante e feliz! 💃✨</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">Veja o que nossas alunas estão dizendo</h2>
+                <p class="section-subtitle">Resultados reais de pessoas reais</p>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Perdi 8kg em 30 dias e me senti INCRÍVEL no Carnaval! As receitas são deliciosas e fáceis de fazer. Nunca pensei que fosse conseguir!"</p>
+                        <p class="testimonial-author">Maria Silva</p>
+                        <p class="testimonial-location">São Paulo, SP</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Estava sem esperança, mas esse desafio mudou minha vida! Emagreci 6kg e minha autoestima voltou. Recomendo de olhos fechados!"</p>
+                        <p class="testimonial-author">Ana Costa</p>
+                        <p class="testimonial-location">Rio de Janeiro, RJ</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Método prático e que cabe na minha rotina. Perdi 7kg sem passar fome e com muita energia. Valeu cada centavo!"</p>
+                        <p class="testimonial-author">Juliana Santos</p>
+                        <p class="testimonial-location">Belo Horizonte, MG</p>
+                    </div>
+                </div>
+
+                <div class="stats-card">
+                    <div class="stat-item">
+                        <p class="stat-number">5000+</p>
+                        <p class="stat-label">Alunas Transformadas</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <p class="stat-number">4.9/5</p>
+                        <p class="stat-label">Avaliação Média</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <p class="stat-number">98%</p>
+                        <p class="stat-label">Satisfação Garantida</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta">
+            <div class="container">
+                <h2 class="final-title">
+                    O Carnaval não espera.<br>
+                    Sua decisão é <span class="underline">AGORA</span>.
+                </h2>
+
+                <p class="final-subtitle">Você tem duas opções:</p>
+
+                <div class="options-grid">
+                    <div class="option-card option-bad">
+                        <p><strong>Opção 1:</strong><br>
+                        Continuar como está. Chegar no Carnaval se sentindo insegura, escondendo o corpo, evitando fotos, e depois se arrepender de não ter feito nada.</p>
+                    </div>
+
+                    <div class="option-card option-good">
+                        <p><strong>Opção 2:</strong><br>
+                        Começar HOJE, seguir o desafio por 30 dias, e chegar no Carnaval linda, leve, confiante e feliz com o seu corpo. ✨</p>
+                    </div>
+                </div>
+
+                <button onclick="redirectToCheckout()" class="cta-btn-final pulse">
+                    Sim, Eu Escolho a Transformação!
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </button>
+
+                <p class="final-info">💳 Pagamento 100% seguro • Acesso instantâneo</p>
+                <p class="final-timer">⏱️ Promoção de R$ 15,90 válida apenas hoje!</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p class="footer-title">Desafio 30 Dias para o Carnaval</p>
+                <p class="footer-subtitle">Transforme seu corpo, sua autoestima e sua vida em 30 dias. 💃</p>
+                <p class="footer-copyright">© 2026 - Todos os direitos reservados</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script-standalone.js"></script>
+</body>
+</html>
