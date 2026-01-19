@@ -17,17 +17,14 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white">
-      {/* Download Banner */}
-      <div className="fixed top-0 left-0 right-0 bg-green-600 text-white py-4 px-4 z-50 shadow-lg">
+      {/* Scarcity Banner */}
+      <div className="fixed top-0 left-0 right-0 bg-red-600 text-white py-3 px-4 z-50 shadow-lg animate-pulse">
         <div className="max-w-6xl mx-auto text-center">
-          <a
-            href="/dist.zip"
-            download
-            className="inline-flex items-center justify-center gap-2 bg-white text-green-600 font-bold px-6 py-2 rounded-full hover:bg-gray-100 transition-all"
-          >
-            <ArrowRight className="w-5 h-5 rotate-90" />
-            BAIXAR ARQUIVOS DO SITE (dist.zip)
-          </a>
+          <p className="text-sm md:text-base font-bold flex items-center justify-center gap-2">
+            <Flame className="w-5 h-5" />
+            PROMOÇÃO VÁLIDA APENAS HOJE! Não perca essa chance única de transformar seu corpo antes do Carnaval
+            <Flame className="w-5 h-5" />
+          </p>
         </div>
       </div>
 
